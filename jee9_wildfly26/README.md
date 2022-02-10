@@ -1,65 +1,61 @@
-# Java/Jakarta EE8
+# Jakarta EE9
 Celovite platfome (Windows Zip)
 
 Priporočeno:
-- [jee8_complete.zip](#) ~1.37GB [Info](#jee8_complete) [Build log](#BuildLog)
+- [jee9.zip](https://drive.google.com/file/d/1bMAEuGXXccEpzvqceS0EJloka4-sYWIz/view?usp=sharing) ~1.46GB [Info](#jee9_complete) [Build log](#BuildLog)
 
 
 
 
-# jee8_complete
-[download](#) ~1.37GB
+# jee9_complete
+[download](https://drive.google.com/file/d/1bMAEuGXXccEpzvqceS0EJloka4-sYWIz/view?usp=sharing) ~1.46GB
 
 ### Vsebina paketa:
-- JDK 1.8.0
-- Eclipse 2020.12
-- Wildfly 22.0.1
-- Postgresql 12.2
+- OpenJDK 17.0.1
+- Eclipse 2021.12
+- Wildfly 26.0.1 - Jakarta EE 9
+- Postgresql 14.1
 - PgAdmin 4
 - MySql 8
-- Demo projekt
+
 
 ### Navodila:
 
-- Razpakirati v `C:\jee8`
-- WildFly port: 28080
+- Razpakirati v `C:\_DEV`
+- WildFly port: 8080
 - WildFly admin: u:user, p:user
-- Wildfly app user: u:guest, p:guest; role: guest
 - Postgresql: u:postgres, p:postgres
 - Mysql: u:root, p:root
-- DS JNDI: java:jboss/datasources/mysqlds --> mysql (testdb)
-- DS JNDI: java:jboss/datasources/postgresds --> postgresql (testdb)
-- Queue JNDI: jms/queue/test
-- Topic JNDI: jms/topic/test
-
+- DS JNDI: java:jboss/datasources/MySqlDS --> mysql (testdb)
+- DS JNDI: java:jboss/datasources/PostgresDS --> postgresql (testdb)
 
 
 # BuildLog
 
 POSTGRESQL
 ==========
-[postgresql-12.2-2-windows-x64-binaries.zip](https://www.enterprisedb.com/download-postgresql-binaries)
+[postgresql-14.1-1-windows-x64-binaries.zip](https://www.enterprisedb.com/download-postgresql-binaries)
 
-[postgresql-42.2.12.jar](https://jdbc.postgresql.org/download.html)
+[postgresql-42.3.1.jar](https://jdbc.postgresql.org/download.html)
 
 ```
-C:\jee8\pgsql\bin\initdb -D C:\jee8\pgsql_data -U postgres -W -E UTF8 -A scram-sha-256
+C:\_DEV\pgsql14\bin\initdb -D C:\_DEV\pgsql14_data -U postgres -W -E UTF8 -A scram-sha-256
 p:postgres
 ```
 
 Zagon:
 ```
-C:\jee8\pgsql\bin\pg_ctl -D C:\jee8\pgsql_data -l C:\jee8\pgsql_data\log.txt start
+C:\_DEV\pgsql14\bin\pg_ctl -D C:\_DEV\pgsql14_data -l C:\_DEV\pgsql14_data\log.txt start
 ```
 
 Ustavitev:
 ```
-C:\jee8\pgsql\bin\pg_ctl -D C:\jee8\pgsql_data stop
+C:\_DEV\pgsql14\bin\pg_ctl -D C:\_DEV\pgsql14_data stop
 ```
 
 CLI odjemalec:
 ```
-C:\jee8\pgsql\bin\psql.exe -U postgres
+C:\_DEV\pgsql14\bin\psql.exe -U postgres
 ```
 
 ```
@@ -80,44 +76,43 @@ CREATE TABLE COMPANY(
 
 PgAdmin4 zagon:
 ```
-"C:\jee8\pgsql\pgAdmin 4\bin\pgAdmin4.exe"
+"C:\_DEV\pgsql14\pgAdmin 4\bin\pgAdmin4.exe"
 ```
-[http://127.0.0.1:60865/browser/](http://127.0.0.1:60865/browser/)
 
 MYSQL
 =====
 [VC_redist.x64.exe](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-[mysql-8.0.19-winx64.zip](https://dev.mysql.com/downloads/mysql/)
+[mysql-8.0.27-winx64.zip](https://dev.mysql.com/downloads/mysql/)
 
-[mysql-connector-java-8.0.19.zip](https://dev.mysql.com/downloads/connector/j/)
+[mysql-connector-java-8.0.27.zip](https://dev.mysql.com/downloads/connector/j/)
 
 my.ini:
 ```
 [mysqld]
-basedir=C:/jee8/mysql-8.0.19-winx64
-datadir=C:/jee8/mysql-8.0.19-winx64/data
+basedir=C:/_DEV/mysql-8.0.19-winx64
+datadir=C:/_DEV/mysql-8.0.19-winx64/data
 default-time-zone='+01:00'
 ```
 
 ```
-C:\jee8\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\jee8\mysql-8.0.19-winx64\my.ini --initialize-insecure
-C:\jee8\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\jee8\mysql-8.0.19-winx64\my.ini
-C:\jee8\mysql-8.0.19-winx64\mysql -u root --skip-password
+C:\_DEV\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\_DEV\mysql-8.0.19-winx64\my.ini --initialize-insecure
+C:\_DEV\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\_DEV\mysql-8.0.19-winx64\my.ini
+C:\_DEV\mysql-8.0.19-winx64\mysql -u root --skip-password
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
 ```
 Zagon:
 ```
-C:\jee8\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\jee8\mysql-8.0.19-winx64\my.ini
+C:\_DEV\mysql-8.0.19-winx64\bin\mysqld --defaults-file=C:\_DEV\mysql-8.0.19-winx64\my.ini
 ```
 
 Ustavitev:
 ```
-C:\jee8\mysql-8.0.19-winx64\bin\mysqladmin shutdown --user=root --host=127.0.0.1 --password=root
+C:\_DEV\mysql-8.0.19-winx64\bin\mysqladmin shutdown --user=root --host=127.0.0.1 --password=root
 ```
 
 ```
-C:\jee8\mysql-8.0.19-winx64\mysql -u root -p
+C:\_DEV\mysql-8.0.19-winx64\mysql -u root -p
 p:root
 create database testdb
 ```
@@ -136,7 +131,9 @@ java:jboss/datasources/mysqlds
 
 java:jboss/datasources/postgresds
 
-porti +20000
+---
+
+TBD:
 
 ```
         <interface name="public">
@@ -168,5 +165,3 @@ users properties:
 user=user
 guest=guest,guest
 ```
-
-

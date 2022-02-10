@@ -2,19 +2,16 @@
 Celovite platfome (Windows Zip)
 
 Priporočeno::
-- [jee8_complete.zip](http://164.8.250.220/jee8/jee8_complete.zip) ~1.21GB [Info](#jee8_complete) [Build log](#BuildLog)
-- [wildfly-19.0.0.Final.standalone.zip](http://164.8.250.220/jee8/wildfly-19.0.0.Final.standalone.zip) ~3MB [Info](#wildfly19_update) [Build log](#BuildLog)
+- [jee8_complete.zip](https://drive.google.com/file/d/17eaRgtX3xyCR39o6S38pIQxL8qVl-FMl/view?usp=sharing) ~1.21GB [Info](#jee8_complete) [Build log](#BuildLog)
 
 Ostale datoteke:
-- [jee8_eclipse_wildfly.zip](http://164.8.250.220/jee8/jee8_eclipse_wildfly.zip) ~955MB [Info](#jee8_eclipse_wildfly) [Build log](#BuildLog)
-- [jee8_eclipse_wildfly_mysql.zip](http://164.8.250.220/jee8/jee8_eclipse_wildfly_mysql.zip) ~1.02GB [Info](#jee8_eclipse_wildfly_mysql) [Build log](#BuildLog)
-- [jee8_eclipse_wildfly_pqsql.zip](http://164.8.250.220/jee8/jee8_eclipse_wildfly_pqsql.zip) ~1.02GB [Info](#jee8_eclipse_wildfly_pqsql) [Build log](#BuildLog)
 
+- [jee8_eclipse_wildfly_pqsql.zip](https://drive.google.com/file/d/1B7RGmexwOqGShq0WL0AI7EK8txbP4MAt/view?usp=sharing) ~1.02GB [Info](#jee8_eclipse_wildfly_pqsql) [Build log](#BuildLog)
 
 
 
 # jee8_complete
-[download](http://164.8.250.220/jee8/jee8_complete.zip) ~1.21GB
+[download](https://drive.google.com/file/d/17eaRgtX3xyCR39o6S38pIQxL8qVl-FMl/view?usp=sharing) ~1.21GB
 
 ### Vsebina paketa:
 - JDK 1.8.0
@@ -37,57 +34,10 @@ Ostale datoteke:
 - DS JNDI: java:jboss/datasources/postgresds --> postgresql (testdb)
 - Queue JNDI: jms/queue/test
 - Topic JNDI: jms/topic/test
-
-
-
-# jee8_eclipse_wildfly
-[download](http://164.8.250.220/jee8/jee8_eclipse_wildfly.zip) ~955MB
-
-### Vsebina paketa:
-- JDK 1.8.0
-- Eclipse 2020.03
-- Wildfly 19.0.0 (JDBC: MySql, Postgresql)
-- Demo projekt (Eclipse - run, IntelliJ - testirano na IntelliJIdea2019.3.4 Ultimate - open-run)
-
-### Navodila:
-
-- Razpakirati v `C:\jee8`
-- WildFly port: 28080
-- WildFly admin: u:user, p:user
-- Wildfly app user: u:guest, p:guest; role: guest
-- DS JNDI: java:jboss/datasources/mysqlds --> mysql (127.0.0.1:3306/testdb; u:root, p:root)
-- DS JNDI: java:jboss/datasources/postgresds --> postgresql (127.0.0.1:5432/testdb; u:postgres, p:postgres)
-- Queue JNDI: jms/queue/test
-- Topic JNDI: jms/topic/test
-
-
-
-# jee8_eclipse_wildfly_mysql
-[download](http://164.8.250.220/jee8/jee8_eclipse_wildfly_mysql.zip) ~1.02GB
-
-### Vsebina paketa:
-- JDK 1.8.0
-- Eclipse 2020.03
-- Wildfly 19.0.0
-- MySql 8
-- Demo projekt (Eclipse - run, IntelliJ - testirano na IntelliJIdea2019.3.4 Ultimate - open-run)
-
-### Navodila:
-
-- Razpakirati v `C:\jee8`
-- WildFly port: 28080
-- WildFly admin: u:user, p:user
-- Wildfly app user: u:guest, p:guest; role: guest
-- Mysql: u:root, p:root
-- DS JNDI: java:jboss/datasources/mysqlds --> mysql (testdb)
-- DS JNDI: java:jboss/datasources/postgresds --> postgresql (127.0.0.1:5432/testdb; u:postgres, p:postgres)
-- Queue JNDI: jms/queue/test
-- Topic JNDI: jms/topic/test
-
 
 
 # jee8_eclipse_wildfly_pqsql
-[download](http://164.8.250.220/jee8/jee8_eclipse_wildfly_pqsql.zip) ~1.02GB
+[download](https://drive.google.com/file/d/1B7RGmexwOqGShq0WL0AI7EK8txbP4MAt/view?usp=sharing) ~1.02GB
 
 ### Vsebina paketa:
 - JDK 1.8.0
@@ -108,25 +58,6 @@ Ostale datoteke:
 - DS JNDI: java:jboss/datasources/postgresds --> postgresql (testdb)
 - Queue JNDI: jms/queue/test
 - Topic JNDI: jms/topic/test
-
-
-
-# wildfly19_update
-[download](http://164.8.250.220/jee8/wildfly-19.0.0.Final.standalone.zip) ~3MB
-
-To je dodatek za [Wildfly 19](https://wildfly.org/downloads/).
-
-Vsebina dodatka:
-- JDBC gonilnik za Postgresql (42.2.12)
-- JDBC gonilnik za MySql (Connector/J 8.0.19)
-- WildFly porti: +20000 (28080 ...)
-- WildFly admin: u:user, p:user
-- Wildfly app user: u:guest, p:guest; role: guest
-- DS JNDI: java:jboss/datasources/mysqlds --> mysql (127.0.0.1:3306/testdb; u:root, p:root)
-- DS JNDI: java:jboss/datasources/postgresds --> postgresql (testdb)
-- Queue JNDI: jms/queue/test
-- Topic JNDI: jms/topic/test
-
 
 
 # BuildLog
@@ -265,5 +196,3 @@ users properties:
 user=user
 guest=guest,guest
 ```
-
-

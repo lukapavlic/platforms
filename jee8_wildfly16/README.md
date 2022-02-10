@@ -2,11 +2,10 @@
 Celovite platfome (Windows Zip)
 
 Priporočeno:
-- [javaee8.zip](http://164.8.250.220/jee8/javaee8.zip) ~970MB [Info](#javaee8)
-
+- [javaee8.zip](https://drive.google.com/file/d/13sHJ1o8C6A6-vxB_V-mzmpbny22pTy4H/view?usp=sharing) ~954MB [Info](#javaee8)
 
 # javaee8
-[download](http://164.8.250.220/jee8/javaee8.zip) ~970MB
+[download](https://drive.google.com/file/d/13sHJ1o8C6A6-vxB_V-mzmpbny22pTy4H/view?usp=sharing) ~954MB
 
 ### Vsebina paketa:
 - JDK 1.8.0
@@ -25,8 +24,3 @@ Priporočeno:
 - DS JNDI: java:jboss/datasources/knjiznica --> postgresql
 - DS JNDI: java:jboss/datasources/database --> mysql (127.0.0.1:13306/database; u:root, p:root)
 - Postgresql: u: postgres, p:postgres
-
-
-
-
-

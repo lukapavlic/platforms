@@ -1,5 +1,8 @@
 # SonarQube 8.5.1
 
+Download: [SonarQubeWin64.zip](https://drive.google.com/file/d/1pRUBrqo68_sJUGnIP0smA2Wl0Bx5Xqly/view?usp=sharing
+) ~824MB
+
 ### Vsebina paketa:
 - OpenJDK 14.0.2
 - Apache Maven 3.6.3
