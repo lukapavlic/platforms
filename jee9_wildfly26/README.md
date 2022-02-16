@@ -3,6 +3,8 @@ Celovite platfome (Windows Zip)
 
 Priporočeno:
 - [jee9.zip](https://drive.google.com/file/d/1bMAEuGXXccEpzvqceS0EJloka4-sYWIz/view?usp=sharing) ~1.46GB [Info](#jee9_complete) [Build log](#BuildLog)
+- [Empty project](https://github.com/lukapavlic/aiv/tree/master/2022/00_EmptySample) --> [Direct Download: 00_EmptySample.zip](https://drive.google.com/file/d/1ZW_Rwqo-7lpgl-WY_wZC1HYuVq1h7Srq/view?usp=sharing)
+- [Keep It Simple'n'Stupid project](https://github.com/lukapavlic/aiv/tree/master/2022/00_KISS_Project) --> [Direct Download: 00_KISS_Project.zip](https://drive.google.com/file/d/1-6ffnpX6r4M7HdzdFusjC2l75nWikSf-/view?usp=sharing)
 
 
 
