@@ -1,6 +1,15 @@
 # J*EE
 Celovite platfome (Windows UnZip'n'Run)
 
+## jee9_cmu
+- OpenJDK 17.0.1
+- Postgresql 14.1
+- PgAdmin 4
+- MySql 8
+- Eclipse 2022.06
+- SonarQube 9.2.3
+- Wildfly 26.0.1 - Jakarta EE 9
+
 
 ## jee9_wildfly26
 - OpenJDK 17.0.1
