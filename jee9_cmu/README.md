@@ -1,21 +1,21 @@
-# Jakarta EE9
+# Jakarta EE9, SonarQube, Docker, Demos
 Windows Zip
 
 Recomended:
-- [jee9.zip](https://drive.google.com/file/d/108wF-YFzmvF7pLZYHaGFUlJ6FT4BS1n3/view?usp=sharing) ~2.09GB [Info](#jee9_complete) [Build log](#BuildLog)
+- [jee9_cmu22.zip](https://drive.google.com/file/d/108wF-YFzmvF7pLZYHaGFUlJ6FT4BS1n3/view?usp=sharing) ~2.09GB [Info](#jee9_complete) [Build log](#BuildLog)
 
-# jee9_complete - CMU edition
+# jee9_cmu22 - CMU edition
 [download](https://drive.google.com/file/d/108wF-YFzmvF7pLZYHaGFUlJ6FT4BS1n3/view?usp=sharing) ~2.09GB
 
 
 ### Contents:
 - OpenJDK 17.0.1
-- Eclipse 2021.12
+- Eclipse 2022.06
 - Wildfly 26.0.1 - Jakarta EE 9
-- Postgresql 14.1  (u:postgres, p:postgres)
+- Postgresql 14.1
 - PgAdmin 4
-- MySql 8  (u:root, p:root)
-- SonarQube 9.2.3 (port 29000)
+- MySql 8
+- SonarQube 9.2.3
 
 
 ### Installation:
