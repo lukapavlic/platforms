@@ -1,5 +1,15 @@
 # J*EE
-Celovite platfome (Windows UnZip'n'Run)
+Development platforms (Windows UnZip'n'Run)
+
+## winter_school_2023
+- OpenJDK 17.0.2
+- Postgresql 15.0.1
+- PgAdmin 4
+- MySql 8
+- MongoDB 6.0.2
+- SonarQube 9.7
+- Docker @ Vagrant (Hyper-V / VirtualBox)
+
 
 ## jee9_cmu
 - OpenJDK 17.0.1
