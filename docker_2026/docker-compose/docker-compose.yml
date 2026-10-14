@@ -1,0 +1,46 @@
+services:
+  postgres:
+    image: postgres:18.1
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: baza
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mysql:
+    image: mysql:9.6.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: baza
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  pgadmin:
+    image: dpage/pgadmin4:9.11
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGPASSFILE: /pgpass
+    ports:
+      - "5050:80"
+    volumes:
+      - ./pgadmin4-servers.json:/pgadmin4/servers.json:ro
+      - pgadmin_data:/var/lib/pgadmin
+      - ./pgpass:/pgpass:ro
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  mysql_data:
+  pgadmin_data:
+
